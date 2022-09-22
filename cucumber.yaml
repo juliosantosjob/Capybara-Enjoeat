@@ -1,0 +1,5 @@
+default: -p config_cloud_report -p config_allure -p config_terminal_output
+config_cloud_report: --publish-quiet
+config_log_output: --format html --out=logs/report.html
+config_terminal_output: --format pretty
+config_allure: --format AllureCucumber::CucumberFormatter --out=logs
