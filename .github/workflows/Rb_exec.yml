@@ -1,0 +1,27 @@
+name: Tests End-to-end Capyara
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+  schedule:
+    - cron: '* 8 1 * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+        with:
+          ruby-version: 2.6
+          
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Run tests
+        run: bundle exec cucumber
