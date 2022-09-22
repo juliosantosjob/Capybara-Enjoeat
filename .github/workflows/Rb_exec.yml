@@ -27,6 +27,17 @@ jobs:
       - name: Run tests
         run: bundle exec cucumber
         
+      - name: Upload report
+        uses: actions/upload-artifact@v3
+        with:
+          name: logs
+          path: '*/logs/*'
+          
+      - name: Download allure-results
+        uses: actions/download-artifact@v3
+        with:
+          name: logs
+ 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         if: always()
