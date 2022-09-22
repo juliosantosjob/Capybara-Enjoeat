@@ -25,3 +25,10 @@ jobs:
 
       - name: Run tests
         run: bundle exec cucumber
+
+      - name: Deploy Pages
+        if: always()
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./SparkReport
