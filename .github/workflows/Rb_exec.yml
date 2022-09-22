@@ -27,6 +27,7 @@ jobs:
       - name: Run tests
         run: bundle exec cucumber
         
+
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
@@ -35,16 +36,17 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Test local action
-        uses: ./allure-report-action
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@master
         if: always()
-        id: allure-report
+        #id: allure-report
         with:
-          allure_results: ./logs
-          gh_pages: gh-pages
-          allure_report: allure-report
+          allure_results: allure-results
+          #gh_pages: gh-pages
+          #allure_report: allure-report
           allure_history: allure-history
-          
+          keep_reports: 20
+
       - name: Deploy report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v2
@@ -52,4 +54,3 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
-
