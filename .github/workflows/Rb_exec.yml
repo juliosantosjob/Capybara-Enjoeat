@@ -31,8 +31,8 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: ./logs
-          allure_history: ./logs
+          allure_results: /logs
+          allure_history: /logs
           keep_reports: 20
           
       - name: Deploy report to Github Pages
