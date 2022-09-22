@@ -27,9 +27,18 @@ jobs:
       - name: Run tests
         run: bundle exec cucumber
         
-      - name: Deploy Pages
+      - name: Generate Allure Report
+        uses: simple-elf/allure-report-action@master
         if: always()
-        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: ./logs
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
+          
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
