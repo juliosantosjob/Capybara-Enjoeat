@@ -4,11 +4,10 @@
 Criei o projeto Capybara-Enjoat para rodar uma execução de testes Ruby em schedule pelo Github Actions.
 
 ### Instalação
-Instale o ruby pelo link: https://rubyinstaller.org/downloads/
+- Instale o ruby pelo link: https://rubyinstaller.org/downloads/;
+- Instale ChromeDriver com a mesma versão do seu navegador chrome pelo link: https://chromedriver.chromium.org/downloads.
 
-Instale ChromeDriver com a mesma versão do seu navegador chrome pelo link: https://chromedriver.chromium.org/downloads
-
-para instalar as dependências do projeto
+para instalar as dependências do projeto:
 
 **Instale o Bundle**
 ```
