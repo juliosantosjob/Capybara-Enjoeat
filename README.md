@@ -1,14 +1,14 @@
 # Execução do projeto
 
 ### Projeto Enjoeat
-Criei o projeto Enjoat para rodar uma execução de testes Ruby em schedule pelo Github Actions.
+Criei o projeto Capybara-Enjoat para rodar uma execução de testes Ruby em schedule pelo Github Actions.
 
 ### Instalação
 Instale o ruby pelo link: https://rubyinstaller.org/downloads/
 
 Instale ChromeDriver com a mesma versão do seu navegador chrome pelo link: https://chromedriver.chromium.org/downloads
 
-para instalar as dependências
+para instalar as dependências do projeto
 
 **Instale o Bundle**
 ```
