@@ -39,9 +39,11 @@ jobs:
       - name: Allure Report
         uses: simple-elf/allure-report-action@master
         if: always()
+        id: allure-report
         with:
-          bundler-cache: true
           allure_results: ./logs
+          
+          allure_report: ./logs
           allure_history: ./logs
           keep_reports: 20
 
