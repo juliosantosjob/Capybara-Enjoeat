@@ -15,7 +15,7 @@ gem install bundle
 ```
 **Clone o projeto**
 ``` 
-git clone https://github.com/julio958214/Enjoeat.git
+git clone https://github.com/juliosantosjob/Capybara-Enjoeat.git
 ```
 **Instale as dependências**
 ```
