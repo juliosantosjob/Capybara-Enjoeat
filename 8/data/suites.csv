@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Oct 22 19:00:52 GMT 2022","Sat Oct 22 19:00:54 GMT 2022","2293","","Restaurantes do site","","restaurants","","Visualização das infomações do restaurante Green Food","Location - features/specs/restaurants.feature:6"
