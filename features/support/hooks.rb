@@ -3,7 +3,7 @@ Before do
   page.current_window.resize_to(1920, 1080)
 end
 
-After do
+AfterSteps do
   shot = page.save_screenshot("logs/temp_evidence.png")
 
   Allure.add_attachment(
