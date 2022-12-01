@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Dec 01 08:54:38 GMT 2022","Thu Dec 01 08:54:57 GMT 2022","19633","","Restaurantes do site","","restaurants","","Visualização das infomações do restaurante Green Food","Location - features/specs/restaurants.feature:6"
