@@ -1,6 +1,6 @@
 class Rest < SitePrism::Page
   set_url "/"
-  element :btn_delivery, 'p[style*="margin-top: "]'
+  element :btn_delivery, 'p[style="margin-top: 50px;"]'
   element :btn_restaurant, 'a[class="btn btn-danger btn-lg"]'
   element :btn_green_food, 'a[href="/restaurants/green-food"]'
   element :txt_all_restaurant, 'section[class="content-header"] h1'
